@@ -92,7 +92,7 @@ highlight CursorLine ctermbg=none guibg=none guifg=none
 " highlight LightlineMiddle_active ctermbg=24 ctermfg=11 guibg=#268bd2
 " highlight LightlineMiddle_command ctermbg=24 ctermfg=1 guibg=#268bd2
 " highlight LightlineMiddle_insert ctermbg=24 ctermfg=11 guibg=#268bd2
-" 
+"
 " highlight LightlineLeft_normal_1_2 ctermbg=24 ctermfg=236 guifg=#3E4452 guibg=#268bd2
 " highlight LightlineLeft_active_1_2 ctermbg=24 ctermfg=236 guifg=#3E4452 guibg=#268bd2
 " highlight LightlineLeft_command_1_2 ctermbg=24 ctermfg=236 guifg=#3E4452 guibg=#268bd2

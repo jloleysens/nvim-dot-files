@@ -85,24 +85,28 @@ let g:Powerline_symbols = 'fancy'
   " augroup END
 " }}}
 
+" Pangloss {{{
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
+" }}}
+
 " Ale {{{
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_linters = {
-\   'javascript': ['eslint'],
+\   'javascript': ['eslint', 'flow'],
 \}
 " }}}
 
 " Syntastic {{{{{{
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 4
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
-" }}}
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_loc_list_height = 4
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 1
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:tsuquyomi_disable_quickfix = 1
+" let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 "}}}
 
 " Neomake {{{

@@ -76,11 +76,13 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " File explorer (mapped t
 Plug 'junegunn/vim-easy-align'                         " Aligning stuff - currently not really using this
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neomake/neomake'                                 " Async linting = life
+" Plug 'neomake/neomake'                                 " Async linting = life
+Plug 'w0rp/ale'                                        " Async linting = life
 Plug 'airblade/vim-gitgutter'                          " Show changes according to git-diff
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
 Plug 'galooshi/vim-import-js'                          " Auto import-js (and/or require)
 Plug 'KabbAmine/vCoolor.vim'
+Plug 'tpope/vim-unimpaired'
 " Plug 'neovim/node-host', { 'do': 'npm install' }
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
 " Plug 'Yggdroot/indentLine'                             " Code indentation
