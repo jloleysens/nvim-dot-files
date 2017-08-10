@@ -14,7 +14,7 @@ let g:lightline ={
             \   'filename': 'LightLineFilename',
             \ },
             \ 'component': {
-            \   'lineinfo': "%{printf('☰ %03d/%03d', line('.'),  line('$'))}",
+            \   'lineinfo': "%{printf('☰ %03d/%03d', line('.'),  line('$'))} %{LinePercent()}",
             \   'column': 'C:%c',
             \},
             \ 'tabline': {
@@ -25,6 +25,9 @@ let g:lightline ={
             \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
             \}
 
+function! LinePercent()
+    return line('.') * 100 / line('$') . '%'
+endfunc
 
 " Markdown preview
 let g:vim_markdown_preview_hotkey = '<C-s>'
@@ -264,7 +267,7 @@ nnoremap <F9> :TagbarToggle<CR>
 
 " Syntastic
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1

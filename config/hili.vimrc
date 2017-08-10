@@ -9,7 +9,8 @@ endfunc
 
 set t_co=256
 " set background=dark  " Dat dark
-colorscheme base16-atelier-sulphurpool
+colorscheme base16-atelier-lakeside
+" colorscheme base16-solarized-dark
 
 set guifont=Fira\ Code:h17
 

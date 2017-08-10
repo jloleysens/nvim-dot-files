@@ -23,10 +23,10 @@ Plug 'vim-scripts/marvim'                        " Store for handy macros
 " }}}
 
 " TypeScript{{{
-" Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
-" Plug 'Quramy/tsuquyomi'                   " TypeScript highlighting and ts server integration for Vim
-" Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
-" Plug 'HerringtonDarkholme/yats.vim'       " TypeScript syntax highlighting w/ DOM
+Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
+Plug 'Quramy/tsuquyomi'                   " TypeScript highlighting and ts server integration for Vim
+Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
+Plug 'HerringtonDarkholme/yats.vim'       " TypeScript syntax highlighting w/ DOM
 " }}}
 
 " ECMAScript {{{
@@ -83,6 +83,7 @@ Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
 Plug 'galooshi/vim-import-js'                          " Auto import-js (and/or require)
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'tpope/vim-unimpaired'
+" Plug 'flowtype/vim-flow'
 " Plug 'neovim/node-host', { 'do': 'npm install' }
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
 " Plug 'Yggdroot/indentLine'                             " Code indentation
