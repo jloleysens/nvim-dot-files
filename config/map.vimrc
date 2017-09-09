@@ -27,19 +27,19 @@ inoremap <down> <nop>
 inoremap <up> <nop>
 
 " cd Shortcuts
-" nnoremap <leader>cdh :lcd ~/Projects/hungrylion-sso-broker<CR>
-" nnoremap <leader>cdpm :lcd ~/Projects/journey-pdf-mailer<CR>
-" nnoremap <leader>cdm :lcd ~/Projects/solutions-milk<CR>
-" nnoremap <leader>cdt :lcd ~/Projects/Temp Stuff<CR>
-" nnoremap <leader>cdma :lcd ~/Projects/Milkapps<CR>
-" nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
-" nnoremap <leader>cdd :lcd ~/Downloads<CR>
-" nnoremap <leader>cdp :lcd ~/Projects<CR>
-" nnoremap <leader>cde :lcd ~/Projects/excel-report-generator<CR>
-" nnoremap <leader>cdpp :lcd ~/Projects/pdfgen-packs<CR>
-" nnoremap <leader>cdpmi :lcd ~/Projects/Milkapps<CR>
-" nnoremap <leader>cdjr :lcd ~/Projects/journey-runtime<CR>
-" nnoremap <leader>cd  :lcd ~<CR>
+nnoremap <leader>cdh :lcd ~/dev/hungrylion-sso-broker<CR>
+nnoremap <leader>cdpm :lcd ~/dev/journey-pdf-mailer<CR>
+nnoremap <leader>cdm :lcd ~/dev/solutions-milk<CR>
+nnoremap <leader>cdt :lcd ~/dev/Temp Stuff<CR>
+nnoremap <leader>cdma :lcd ~/dev/Milkapps<CR>
+nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
+nnoremap <leader>cdd :lcd ~/Downloads<CR>
+nnoremap <leader>cdp :lcd ~/dev<CR>
+nnoremap <leader>cde :lcd ~/dev/excel-report-generator<CR>
+nnoremap <leader>cdpp :lcd ~/dev/pdfgen-packs<CR>
+nnoremap <leader>cdpmi :lcd ~/dev/Milkapps<CR>
+nnoremap <leader>cdjr :lcd ~/dev/journey-runtime<CR>
+nnoremap <leader>cd  :lcd ~<CR>
 
 " Switch between dark and light colorschemes and preserve italic comments and
 " preserve no CursorLine highlight. The func is defined in hili.vimrc fool!
