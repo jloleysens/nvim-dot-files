@@ -27,18 +27,19 @@ inoremap <down> <nop>
 inoremap <up> <nop>
 
 " cd Shortcuts
-nnoremap <leader>cdh :lcd ~/Projects/hungrylion-sso-broker<CR>
-nnoremap <leader>cdpm :lcd ~/Projects/journey-pdf-mailer<CR>
-nnoremap <leader>cdm :lcd ~/Projects/solutions-milk<CR>
-nnoremap <leader>cdt :lcd ~/Projects/Temp Stuff<CR>
-nnoremap <leader>cdma :lcd ~/Projects/Milkapps<CR>
-nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
-nnoremap <leader>cdd :lcd ~/Downloads<CR>
-nnoremap <leader>cdp :lcd ~/Projects<CR>
-nnoremap <leader>cde :lcd ~/Projects/excel-report-generator<CR>
-nnoremap <leader>cdpp  :lcd ~/Projects/pdfgen-packs<CR>
-nnoremap <leader>cdpmi  :lcd ~/Projects/Milkapps<CR>
-nnoremap <leader>cd  :lcd ~<CR>
+" nnoremap <leader>cdh :lcd ~/Projects/hungrylion-sso-broker<CR>
+" nnoremap <leader>cdpm :lcd ~/Projects/journey-pdf-mailer<CR>
+" nnoremap <leader>cdm :lcd ~/Projects/solutions-milk<CR>
+" nnoremap <leader>cdt :lcd ~/Projects/Temp Stuff<CR>
+" nnoremap <leader>cdma :lcd ~/Projects/Milkapps<CR>
+" nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
+" nnoremap <leader>cdd :lcd ~/Downloads<CR>
+" nnoremap <leader>cdp :lcd ~/Projects<CR>
+" nnoremap <leader>cde :lcd ~/Projects/excel-report-generator<CR>
+" nnoremap <leader>cdpp :lcd ~/Projects/pdfgen-packs<CR>
+" nnoremap <leader>cdpmi :lcd ~/Projects/Milkapps<CR>
+" nnoremap <leader>cdjr :lcd ~/Projects/journey-runtime<CR>
+" nnoremap <leader>cd  :lcd ~<CR>
 
 " Switch between dark and light colorschemes and preserve italic comments and
 " preserve no CursorLine highlight. The func is defined in hili.vimrc fool!
@@ -53,41 +54,41 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Terminal keys
-" tnoremap <Esc> <C-\><C-n>
-" tnoremap <A-o> <C-\><C-n>gt
-" tnoremap <A-b> <C-\><C-n>gT
-" tnoremap <A-c> <C-\><C-n>:tabnew<CR>
-" tnoremap <A-h> <C-\><C-n><C-w>h
-" tnoremap <A-j> <C-\><C-n><C-w>j
-" tnoremap <A-k> <C-\><C-n><C-w>k
-" tnoremap <A-l> <C-\><C-n><C-w>l
+tnoremap <Esc> <C-\><C-n>
+tnoremap <A-o> <C-\><C-n>gt
+tnoremap <A-b> <C-\><C-n>gT
+tnoremap <A-c> <C-\><C-n>:tabnew<CR>
+tnoremap <A-h> <C-\><C-n><C-w>h
+tnoremap <A-j> <C-\><C-n><C-w>j
+tnoremap <A-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
 " Commented out for Mvim
-tnoremap ø <C-\><C-n>gt
-tnoremap ∫ <C-\><C-n>gT
-tnoremap ç <C-\><C-n>:tabnew<CR>
-tnoremap ˙ <C-\><C-n><C-w>h
-tnoremap ∆ <C-\><C-n><C-w>j
-tnoremap ˚ <C-\><C-n><C-w>k
-tnoremap ¬ <C-\><C-n><C-w>l
+" tnoremap ø <C-\><C-n>gt
+" tnoremap ∫ <C-\><C-n>gT
+" tnoremap ç <C-\><C-n>:tabnew<CR>
+" tnoremap ˙ <C-\><C-n><C-w>h
+" tnoremap ∆ <C-\><C-n><C-w>j
+" tnoremap ˚ <C-\><C-n><C-w>k
+" tnoremap ¬ <C-\><C-n><C-w>l
 
-" nnoremap <A-o> gt
-" nnoremap <A-b> gT
-" nnoremap <A-c> :tabnew<CR>
-" nnoremap <A-h> <C-w>h
-" nnoremap <A-j> <C-w>j
-" nnoremap <A-k> <C-w>k
-" nnoremap <A-l> <C-w>l
-nnoremap ø gt
-nnoremap ∫ gT
-nnoremap ç :tabnew<CR>
-nnoremap ˙ <C-w>h
-nnoremap ∆ <C-w>j
-nnoremap ˚ <C-w>k
-nnoremap ¬ <C-w>l
+nnoremap <A-o> gt
+nnoremap <A-b> gT
+nnoremap <A-c> :tabnew<CR>
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+" nnoremap ø gt
+" nnoremap ∫ gT
+" nnoremap ç :tabnew<CR>
+" nnoremap ˙ <C-w>h
+" nnoremap ∆ <C-w>j
+" nnoremap ˚ <C-w>k
+" nnoremap ¬ <C-w>l
 " Gotta have o somewhere!
 nnoremap <Leader>o <C-o>
 
-nnoremap <leader><leader>n :vs ~/Google Drive/notes.md<CR>
+nnoremap <leader><leader>n :vs ~/grive/notes.md<CR>
 
 " Visual Mode
 vnoremap , <
