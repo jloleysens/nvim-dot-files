@@ -39,12 +39,14 @@ nnoremap <leader>cde :lcd ~/dev/excel-report-generator<CR>
 nnoremap <leader>cdpp :lcd ~/dev/pdfgen-packs<CR>
 nnoremap <leader>cdpmi :lcd ~/dev/Milkapps<CR>
 nnoremap <leader>cdjr :lcd ~/dev/journey-runtime<CR>
+nnoremap <leader>cdi :lcd ~/dev/ip30-rfid-reader-lib<CR>
 nnoremap <leader>cd  :lcd ~<CR>
 
-" Switch between dark and light colorschemes and preserve italic comments and
-" preserve no CursorLine highlight. The func is defined in hili.vimrc fool!
-nnoremap <leader><leader>d :colorscheme base16-github \| call SetLightThemeStuff()<CR>
-nnoremap <leader><leader>D :colorscheme base16-atelier-sulphurpool \| highlight Comment cterm=italic gui=italic \| highlight CursorLine ctermbg=none guibg=none guifg=none<CR>
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" bind \ (backward slash) to grep shortcut
+command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
 
 " Edit my eslintrc file
 nnoremap <leader>jse :vs ~/.eslintrc.json
@@ -156,8 +158,8 @@ nnoremap <leader>y ggyG<c-o>
 nnoremap <leader>p ggVGp
 
 " Swop colon and semicolon
-nnoremap ; :
-nnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
 
 " Remove all trailing white space
 nnoremap <leader><leader>s :%s/\v\s+$//gi<CR>
