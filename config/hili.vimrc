@@ -9,7 +9,7 @@ endfunc
 
 set t_co=256
 " set background=dark  " Dat dark
-colorscheme dracula
+colorscheme base16-atelier-sulphurpool
 highlight Normal guibg=none ctermbg=none
 " colorscheme base16-solarized-dark
 
