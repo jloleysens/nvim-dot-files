@@ -9,9 +9,10 @@ endfunc
 
 set t_co=256
 " set background=dark  " Dat dark
-colorscheme base16-atelier-sulphurpool
-highlight Normal guibg=none ctermbg=none
-" colorscheme base16-solarized-dark
+" colorscheme base16-materia
+" colorscheme base16-phd
+colorscheme base16-unikitty-dark
+" highlight Normal guibg=none ctermbg=none
 
 set guifont=Fira\ Code:h17
 
@@ -192,7 +193,6 @@ function! SetLightThemeStuff()
     highlight CursorLine ctermbg=none guibg=none guifg=none
     highlight Pmenu guibg=#707880 gui=bold
 endfunction
-
 
 " Highlighting for Python
 " highlight pythonBuiltinBold cterm=Bold ctermfg=Blue
