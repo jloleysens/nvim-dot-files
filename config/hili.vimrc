@@ -11,7 +11,7 @@ set t_co=256
 " set background=dark  " Dat dark
 " colorscheme base16-materia
 " colorscheme base16-phd
-colorscheme base16-unikitty-dark
+colorscheme base16-atelier-sulphurpool
 " highlight Normal guibg=none ctermbg=none
 
 set guifont=Fira\ Code:h17
