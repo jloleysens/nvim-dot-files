@@ -69,7 +69,7 @@ Plug 'elixir-lang/vim-elixir'    " Elixir-lang's endorsed vim plugin
 " Utils (IDE-like stuff) {{{
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'gcmt/taboo.vim'                                  " Rename tabs
+Plug 'gcmt/taboo.vim'                                  " Rename tabs
 Plug 'jiangmiao/auto-pairs'                            " Matching brackets and stuff on the fly
 Plug 'majutsushi/tagbar'                               " Tag explorer (mapped to <F8>)
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " File explorer (mapped to <F9>)
@@ -80,9 +80,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'                                        " Async linting = life
 Plug 'airblade/vim-gitgutter'                          " Show changes according to git-diff
 Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
-Plug 'galooshi/vim-import-js'                          " Auto import-js (and/or require)
+" Plug 'galooshi/vim-import-js'                          " Auto import-js (and/or require)
 " Plug 'KabbAmine/vCoolor.vim'
 Plug 'tpope/vim-unimpaired'
+Plug 'scrooloose/nerdcommenter'
 " Plug 'flowtype/vim-flow'
 " Plug 'neovim/node-host', { 'do': 'npm install' }
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }

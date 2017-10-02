@@ -12,19 +12,19 @@ nnoremap <leader><leader>{ `<i\emph{<C-c>`>6la}<C-c>
 " Format paragraph
 nnoremap <leader>x }gq{``
 " clear search
-nnoremap <leader>; :noh<CR>
+nnoremap <leader>z :noh<CR>
 " open recent files
 " nnoremap <leader><leader>o :MRU<CR>
 
 " Use the homerow
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-nnoremap <down> <nop>
-nnoremap <up> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-inoremap <down> <nop>
-inoremap <up> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" nnoremap <down> <nop>
+" nnoremap <up> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
+" inoremap <down> <nop>
+" inoremap <up> <nop>
 
 " cd Shortcuts
 nnoremap <leader>cdh :lcd ~/dev/hungrylion-sso-broker<CR>

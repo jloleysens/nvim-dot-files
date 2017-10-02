@@ -41,6 +41,10 @@ let g:vim_markdown_preview_github = 1
 
 let g:Powerline_symbols = 'fancy'
 
+" NERD Commenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
 " Ctrl P {{{
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
@@ -94,8 +98,8 @@ let g:jsx_ext_required = 0
 " }}}
 
 " Ale {{{
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 0
+" let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
 \}
