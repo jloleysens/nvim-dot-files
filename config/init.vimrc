@@ -9,6 +9,8 @@ Plug 'tpope/vim-surround'                        " Quickly change surrounding st
 Plug 'rhysd/vim-grammarous', {'for': 'markdown'} " Grammar checker - used primarily for MD files
 " Plug 'yegappan/mru'
 Plug 'vim-scripts/marvim'                        " Store for handy macros
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'janko-m/vim-test'
 " Plug 'vim-scripts/YankRing.vim'                               " Remember what I typed?
 " Plug 'Shougo/neosnippet.vim'
 " Plug 'Shougo/neosnippet-snippets'

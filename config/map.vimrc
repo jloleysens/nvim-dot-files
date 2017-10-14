@@ -40,6 +40,7 @@ nnoremap <leader>cdpp :lcd ~/dev/pdfgen-packs<CR>
 nnoremap <leader>cdpmi :lcd ~/dev/Milkapps<CR>
 nnoremap <leader>cdjr :lcd ~/dev/journey-runtime<CR>
 nnoremap <leader>cdi :lcd ~/dev/ip30-rfid-reader-lib<CR>
+nnoremap <leader>cdrr  :lcd ~/dev/emerson-fisher-repair-report-app<CR>
 nnoremap <leader>cd  :lcd ~<CR>
 
 " bind K to grep word under cursor
@@ -95,6 +96,9 @@ nnoremap <leader><leader>n :vs ~/grive/notes.md<CR>
 " Visual Mode
 vnoremap , <
 vnoremap . >
+
+" Cool test stuff
+nnoremap <leader>l :TestLast<CR>
 
 " Split current window and open terminal in a left split
 nnoremap <C-w>t :vsp \| terminal<CR>

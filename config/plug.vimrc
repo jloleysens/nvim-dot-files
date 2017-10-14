@@ -117,30 +117,30 @@ let g:ale_linters = {
 "}}}
 
 " Neomake {{{
-let g:neomake_javascript_enabled_makers = ['eslint']
-let g:fzf_tags_command = 'ctags -R .'
-let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
-let g:neomake_open_list = 2
-let g:neomake_list_height = 5
-let g:neomake_warning_sign = {
-  \ 'text': 'W',
-  \ 'texthl': 'WarningMsg',
-  \ }
-let g:neomake_error_sign = {
-  \ 'text': 'E',
-  \ 'texthl': 'ErrorMsg',
-  \ }
-augroup _neomake
-  "autocmd! BufWritePost * Neomake
-  nnoremap <leader>l :Neomake<CR>
-  " Hacks!
-  nnoremap <leader><leader>l :lclose\|syn off\|syn on\|source ~/.config/nvim/init.vim \|sign unplace *<CR>
-  autocmd! BufWinEnter quickfix nnoremap <silent> <buffer>
-              \   q :cclose<cr>:lclose<cr>
-  autocmd! BufLeave * if (winnr('$') == 1 && &buftype ==# 'quickfix' ) |
-              \   bd|
-              \   q | endif
-augroup END
+" let g:neomake_javascript_enabled_makers = ['eslint']
+" let g:fzf_tags_command = 'ctags -R .'
+" let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
+" let g:neomake_open_list = 2
+" let g:neomake_list_height = 5
+" let g:neomake_warning_sign = {
+  " \ 'text': 'W',
+  " \ 'texthl': 'WarningMsg',
+  " \ }
+" let g:neomake_error_sign = {
+  " \ 'text': 'E',
+  " \ 'texthl': 'ErrorMsg',
+  " \ }
+" augroup _neomake
+  " "autocmd! BufWritePost * Neomake
+  " nnoremap <leader>l :Neomake<CR>
+  " " Hacks!
+  " nnoremap <leader><leader>l :lclose\|syn off\|syn on\|source ~/.config/nvim/init.vim \|sign unplace *<CR>
+  " autocmd! BufWinEnter quickfix nnoremap <silent> <buffer>
+              " \   q :cclose<cr>:lclose<cr>
+  " autocmd! BufLeave * if (winnr('$') == 1 && &buftype ==# 'quickfix' ) |
+              " \   bd|
+              " \   q | endif
+" augroup END
 " }}}
 
 " JsDoc {{{
