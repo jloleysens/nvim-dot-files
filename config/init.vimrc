@@ -11,6 +11,7 @@ Plug 'rhysd/vim-grammarous', {'for': 'markdown'} " Grammar checker - used primar
 Plug 'vim-scripts/marvim'                        " Store for handy macros
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'janko-m/vim-test'
+Plug 'prettier/vim-prettier'
 " Plug 'vim-scripts/YankRing.vim'                               " Remember what I typed?
 " Plug 'Shougo/neosnippet.vim'
 " Plug 'Shougo/neosnippet-snippets'

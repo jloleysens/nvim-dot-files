@@ -100,6 +100,9 @@ vnoremap . >
 " Cool test stuff
 nnoremap <leader>l :TestLast<CR>
 
+" Prettier shortcut
+nnoremap <leader>p :Prettier<CR>:w<CR>
+
 " Split current window and open terminal in a left split
 nnoremap <C-w>t :vsp \| terminal<CR>
 
@@ -158,8 +161,8 @@ nnoremap <C-f> Vapzf
 " nnoremap <leader>W :execute "match None " . '/\v +$/' <CR>
 
 " Yank and paste contents of buffer
-nnoremap <leader>y ggyG<c-o>
-nnoremap <leader>p ggVGp
+nnoremap <leader><leader>y ggyG<c-o>
+nnoremap <leader><leader>p ggVGp
 
 " Swop colon and semicolon
 " nnoremap ; :
