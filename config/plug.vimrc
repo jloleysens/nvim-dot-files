@@ -57,6 +57,8 @@ let g:NERDCompactSexyComs = 1
 " }}}
 
 " FZF {{{
+let g:fzf_tags_command = 'ctags -R .'
+let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
   " function! s:update_fzf_colors()
   "   let rules =
   "   \ { 'fg':      [['Normal',       'fg']],
@@ -98,8 +100,8 @@ let g:jsx_ext_required = 0
 " }}}
 
 " Ale {{{
-" let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
 let g:ale_linters = {
 \   'javascript': ['eslint', 'flow'],
 \}
@@ -118,8 +120,6 @@ let g:ale_linters = {
 
 " Neomake {{{
 " let g:neomake_javascript_enabled_makers = ['eslint']
-" let g:fzf_tags_command = 'ctags -R .'
-" let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
 " let g:neomake_open_list = 2
 " let g:neomake_list_height = 5
 " let g:neomake_warning_sign = {
@@ -131,9 +131,9 @@ let g:ale_linters = {
   " \ 'texthl': 'ErrorMsg',
   " \ }
 " augroup _neomake
-  " "autocmd! BufWritePost * Neomake
+  " autocmd! BufWritePost * Neomake
   " nnoremap <leader>l :Neomake<CR>
-  " " Hacks!
+  " Hacks!
   " nnoremap <leader><leader>l :lclose\|syn off\|syn on\|source ~/.config/nvim/init.vim \|sign unplace *<CR>
   " autocmd! BufWinEnter quickfix nnoremap <silent> <buffer>
               " \   q :cclose<cr>:lclose<cr>
@@ -202,7 +202,7 @@ if !exists('g:deoplete#omni#input_patterns')
 endif
 " let g:deoplete#disable_auto_complete = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-let g:deoplete#disable_auto_complete = 0
+let g:deoplete#disable_auto_complete = 1
 let g:deoplete#omni#sources={}
 let g:deoplete#omni#sources._=['buffer', 'file', 'ultisnips']
 

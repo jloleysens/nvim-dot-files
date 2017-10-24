@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 
 " General {{{
-Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
+" Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
 Plug 'itchyny/lightline.vim'                     " Pretty bar at the bottom of the screen!
 Plug 'tpope/vim-fugitive'                        " Wrapper for Git and displaying current branch in lightline
 Plug 'ervandew/supertab'                         " Tab life!

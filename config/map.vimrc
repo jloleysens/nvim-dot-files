@@ -27,21 +27,21 @@ nnoremap <leader>z :noh<CR>
 " inoremap <up> <nop>
 
 " cd Shortcuts
-nnoremap <leader>cdh :lcd ~/dev/hungrylion-sso-broker<CR>
 nnoremap <leader>cdpm :lcd ~/dev/journey-pdf-mailer<CR>
 nnoremap <leader>cdm :lcd ~/dev/solutions-milk<CR>
-nnoremap <leader>cdt :lcd ~/dev/Temp Stuff<CR>
 nnoremap <leader>cdma :lcd ~/dev/Milkapps<CR>
 nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
 nnoremap <leader>cdd :lcd ~/Downloads<CR>
 nnoremap <leader>cdp :lcd ~/dev<CR>
+nnoremap <leader>cdb :lcd ~/dev/playground/crypto-trader-bot<CR>
 nnoremap <leader>cde :lcd ~/dev/excel-report-generator<CR>
 nnoremap <leader>cdpp :lcd ~/dev/pdfgen-packs<CR>
-nnoremap <leader>cdpmi :lcd ~/dev/Milkapps<CR>
-nnoremap <leader>cdjr :lcd ~/dev/journey-runtime<CR>
+nnoremap <leader>cdpf :lcd ~/dev/pdfgen<CR>
 nnoremap <leader>cdi :lcd ~/dev/ip30-rfid-reader-lib<CR>
-nnoremap <leader>cdrr  :lcd ~/dev/emerson-fisher-repair-report-app<CR>
-nnoremap <leader>cd  :lcd ~<CR>
+nnoremap <leader>cdrr :lcd ~/dev/emerson-fisher-repair-report-app<CR>
+nnoremap <leader>cdts :lcd ~/dev/emerson-fisher-timesheet-app<CR>
+nnoremap <leader>cdf :lcd ~/dev/fyodor<CR>
+nnoremap <leader>cd :lcd ~<CR>
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

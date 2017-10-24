@@ -8,10 +8,9 @@ function! <SID>SynStack()
 endfunc
 
 set t_co=256
-" set background=dark  " Dat dark
 " colorscheme base16-materia
 " colorscheme base16-phd
-colorscheme PaperColor | set background=dark
+colorscheme dracula
 highlight Visual cterm=none ctermfg=none ctermbg=0 guifg=none guibg=#2F4F4F
 highlight Search cterm=none ctermfg=none ctermbg=0 guifg=none guibg=#2F4F4F
 " colorscheme base16-atelier-sulphurpool
