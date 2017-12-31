@@ -5,7 +5,7 @@ let g:lightline ={
             \  'left': [ ['mode', 'paste'],
             \            ['fugitive','readonly','filename','modified'] ],
             \  'right': [ ['lineinfo'], ['column'],
-            \            [ 'fileformat', 'fileencoding', 'filetype'] ],
+            \            [ 'filetype'] ],
             \},
             \ 'component_function': {
             \   'fugitive': 'LightLineFugitive',
@@ -21,7 +21,9 @@ let g:lightline ={
             \   'left': [ [ 'tabs' ] ],
             \   'right': [ [ 'close' ] ],
             \},
-            \}
+            \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+            \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+           \}
 
 function! LinePercent()
     return line('.') * 100 / line('$') . '%'

@@ -10,9 +10,11 @@ endfunc
 set t_co=256
 " colorscheme base16-materia
 " colorscheme base16-phd
+" colorscheme base16-solarized-dark
 colorscheme dracula
-highlight Visual cterm=none ctermfg=none ctermbg=0 guifg=none guibg=#2F4F4F
-highlight Search cterm=none ctermfg=none ctermbg=0 guifg=none guibg=#2F4F4F
+" colorscheme onedark
+set fillchars+=vert:\|
+highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool
 " highlight Normal guibg=none ctermbg=none
 

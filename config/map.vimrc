@@ -92,6 +92,7 @@ nnoremap <A-l> <C-w>l
 nnoremap <Leader>o <C-o>
 
 nnoremap <leader><leader>n :vs ~/grive/notes.md<CR>
+nnoremap <leader><leader>N :e ~/grive/notes.md<CR>
 
 " Visual Mode
 vnoremap , <
@@ -152,8 +153,8 @@ iabbrev **t **this**
 inoremap jk <esc>
 tnoremap jk <C-\><C-n>
 " For training:
-inoremap <C-c> <nop>
-inoremap <esc> <nop>
+" inoremap <C-c> <nop>
+" inoremap <esc> <nop>
 nnoremap <C-f> Vapzf
 
 " Highlight trailing missing characters <-- these have been replaced by listchars

@@ -42,11 +42,12 @@ Plug 'maksimr/vim-jsbeautify'   " They see me indenting, they hatin'
 
 " Clojure {{{
 " Plug 'xolox/vim-session'      " Requires vim-misc plug in to use...
-" Plug 'tpope/vim-fireplace'    " For connecting to a nrepl server from within vim buffer
+Plug 'tpope/vim-fireplace'    " For connecting to a nrepl server from within vim buffer
 " Plug 'venantius/vim-cljfmt'   " Some format tooling!
 " Plug 'venantius/vim-eastwood' " Hello clj linting!
-" Plug 'guns/vim-clojure-static'
-" Plug 'guns/vim-clojure-highlight'
+Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+Plug 'kien/rainbow_parentheses.vim'
 " Plug 'gberenfield/cljfold.vim'
 " Plug 'tpope/vim-salve'        " Requires vim firepleace << slows startup
 " Plug 'dgrnbrg/vim-redl'       " Clojure debugger
