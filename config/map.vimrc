@@ -57,37 +57,37 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Terminal keys
-tnoremap <Esc> <C-\><C-n>
-tnoremap <A-o> <C-\><C-n>gt
-tnoremap <A-b> <C-\><C-n>gT
-tnoremap <A-c> <C-\><C-n>:tabnew<CR>
-tnoremap <A-h> <C-\><C-n><C-w>h
-tnoremap <A-j> <C-\><C-n><C-w>j
-tnoremap <A-k> <C-\><C-n><C-w>k
-tnoremap <A-l> <C-\><C-n><C-w>l
+" tnoremap <Esc> <C-\><C-n>
+" tnoremap <A-o> <C-\><C-n>gt
+" tnoremap <A-b> <C-\><C-n>gT
+" tnoremap <A-c> <C-\><C-n>:tabnew<CR>
+" tnoremap <A-h> <C-\><C-n><C-w>h
+" tnoremap <A-j> <C-\><C-n><C-w>j
+" tnoremap <A-k> <C-\><C-n><C-w>k
+" tnoremap <A-l> <C-\><C-n><C-w>l
 " Commented out for Mvim
-" tnoremap ø <C-\><C-n>gt
-" tnoremap ∫ <C-\><C-n>gT
-" tnoremap ç <C-\><C-n>:tabnew<CR>
-" tnoremap ˙ <C-\><C-n><C-w>h
-" tnoremap ∆ <C-\><C-n><C-w>j
-" tnoremap ˚ <C-\><C-n><C-w>k
-" tnoremap ¬ <C-\><C-n><C-w>l
+tnoremap ø <C-\><C-n>gt
+tnoremap ∫ <C-\><C-n>gT
+tnoremap ç <C-\><C-n>:tabnew<CR>
+tnoremap ˙ <C-\><C-n><C-w>h
+tnoremap ∆ <C-\><C-n><C-w>j
+tnoremap ˚ <C-\><C-n><C-w>k
+tnoremap ¬ <C-\><C-n><C-w>l
 
-nnoremap <A-o> gt
-nnoremap <A-b> gT
-nnoremap <A-c> :tabnew<CR>
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
-" nnoremap ø gt
-" nnoremap ∫ gT
-" nnoremap ç :tabnew<CR>
-" nnoremap ˙ <C-w>h
-" nnoremap ∆ <C-w>j
-" nnoremap ˚ <C-w>k
-" nnoremap ¬ <C-w>l
+" nnoremap <A-o> gt
+" nnoremap <A-b> gT
+" nnoremap <A-c> :tabnew<CR>
+" nnoremap <A-h> <C-w>h
+" nnoremap <A-j> <C-w>j
+" nnoremap <A-k> <C-w>k
+" nnoremap <A-l> <C-w>l
+nnoremap ø gt
+nnoremap ∫ gT
+nnoremap ç :tabnew<CR>
+nnoremap ˙ <C-w>h
+nnoremap ∆ <C-w>j
+nnoremap ˚ <C-w>k
+nnoremap ¬ <C-w>l
 " Gotta have o somewhere!
 nnoremap <Leader>o <C-o>
 

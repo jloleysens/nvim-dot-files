@@ -11,7 +11,7 @@ set t_co=256
 " colorscheme base16-materia
 " colorscheme base16-phd
 " colorscheme base16-solarized-dark
-colorscheme dracula
+colorscheme base16-default-dark
 " colorscheme onedark
 set fillchars+=vert:\|
 highlight VertSplit guibg=0
