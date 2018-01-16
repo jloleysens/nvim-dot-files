@@ -8,11 +8,7 @@ function! <SID>SynStack()
 endfunc
 
 set t_co=256
-" colorscheme base16-materia
-" colorscheme base16-phd
-" colorscheme base16-solarized-dark
-colorscheme base16-default-dark
-" colorscheme onedark
+colorscheme base16-materia
 set fillchars+=vert:\|
 highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool
