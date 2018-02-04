@@ -103,7 +103,7 @@ Plug 'scrooloose/nerdcommenter'
 " Colorschemes {{{
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'ajh17/Spacegray.vim'
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
 " Plug 'freeo/vim-kalisi'
 " Plug 'ashfinal/vim-colors-violet'
 " Plug 'mhartington/oceanic-next'

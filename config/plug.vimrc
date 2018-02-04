@@ -1,6 +1,6 @@
 " vim lightline
 let g:lightline ={
-            \'colorscheme': 'default',
+            \'colorscheme': 'onedark',
             \'active': {
             \  'left': [ ['mode', 'paste'],
             \            ['fugitive','readonly','filename','modified'] ],

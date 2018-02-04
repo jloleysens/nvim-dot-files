@@ -27,21 +27,7 @@ nnoremap <leader>z :noh<CR>
 " inoremap <up> <nop>
 
 " cd Shortcuts
-nnoremap <leader>cdpm :lcd ~/dev/journey-pdf-mailer<CR>
-nnoremap <leader>cdm :lcd ~/dev/solutions-milk<CR>
-nnoremap <leader>cdma :lcd ~/dev/Milkapps<CR>
-nnoremap <leader>cdc :lcd ~/.config/nvim/<CR>
-nnoremap <leader>cdd :lcd ~/Downloads<CR>
-nnoremap <leader>cdp :lcd ~/dev<CR>
-nnoremap <leader>cdb :lcd ~/dev/playground/crypto-trader-bot<CR>
-nnoremap <leader>cde :lcd ~/dev/excel-report-generator<CR>
-nnoremap <leader>cdpp :lcd ~/dev/pdfgen-packs<CR>
-nnoremap <leader>cdpf :lcd ~/dev/pdfgen<CR>
-nnoremap <leader>cdi :lcd ~/dev/ip30-rfid-reader-lib<CR>
-nnoremap <leader>cdrr :lcd ~/dev/emerson-fisher-repair-report-app<CR>
-nnoremap <leader>cdts :lcd ~/dev/emerson-fisher-timesheet-app<CR>
-nnoremap <leader>cdf :lcd ~/dev/fyodor<CR>
-nnoremap <leader>cd :lcd ~<CR>
+nnoremap <leader>cdje :lcd ~/dev/journey-app-editor<CR>
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
@@ -65,7 +51,7 @@ nmap ga <Plug>(EasyAlign)
 " tnoremap <A-j> <C-\><C-n><C-w>j
 " tnoremap <A-k> <C-\><C-n><C-w>k
 " tnoremap <A-l> <C-\><C-n><C-w>l
-" Commented out for Mvim
+" Above commented out for Mvim
 tnoremap ø <C-\><C-n>gt
 tnoremap ∫ <C-\><C-n>gT
 tnoremap ç <C-\><C-n>:tabnew<CR>

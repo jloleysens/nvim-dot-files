@@ -8,13 +8,23 @@ function! <SID>SynStack()
 endfunc
 
 set t_co=256
-colorscheme base16-materia
+colorscheme onedark
 set fillchars+=vert:\|
-highlight VertSplit guibg=0
+" highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool
 " highlight Normal guibg=none ctermbg=none
 
-set guifont=Fira\ Code:h17
+set guifont=Fira\ Code:h13
+
+
+" More GUI stuff
+" Hide all scrollbars
+set guioptions=
+" Switch off the bell
+set noerrorbells
+set novisualbell
+set t_vb=
+autocmd! GUIEnter * set vb t_vb=
 
 augroup _softwrap
   " My Custom Highligting -----------
