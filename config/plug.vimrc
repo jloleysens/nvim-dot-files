@@ -1,6 +1,6 @@
 " vim lightline
 let g:lightline ={
-            \'colorscheme': 'onedark',
+            \'colorscheme': 'default',
             \'active': {
             \  'left': [ ['mode', 'paste'],
             \            ['fugitive','readonly','filename','modified'] ],
@@ -14,15 +14,13 @@ let g:lightline ={
             \   'filename': 'LightLineFilename',
             \ },
             \ 'component': {
-            \   'lineinfo': "%{printf('☰ %03d/%03d', line('.'),  line('$'))} %{LinePercent()}",
+            \   'lineinfo': "%{GTagsRunningText()} %{printf('☰ %03d/%03d', line('.'),  line('$'))} %{LinePercent()}",
             \   'column': 'C:%c',
             \},
             \ 'tabline': {
             \   'left': [ [ 'tabs' ] ],
             \   'right': [ [ 'close' ] ],
-            \},
-            \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
-            \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+            \}
            \}
 
 function! LinePercent()
@@ -41,24 +39,54 @@ let g:vim_markdown_preview_github = 1
 
 let g:Powerline_symbols = 'fancy'
 
-" NERD Commenter
+" NERD Commenter {{{
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+"}}}
 
-" Ctrl P {{{
-" let g:ctrlp_map = '<c-p>'
-" let g:ctrlp_cmd = 'CtrlP'
-" let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-" let g:ctrlp_custom_ignore = {
-"   \ 'dir':  '\v[\/]\.?(node_modules|git|hg|svn)$',
-"   \ 'file': '\v\.(exe|so|dll)$',
-"   \ 'link': 'some_bad_symbolic_links',
-"   \ }
+" Gutentags {{{
+function! GTagsRunningText()
+  let l:text = gutentags#statusline()
+  if (strlen(l:text))
+    return ' -= Generating tags =-'
+  else
+    return ''
+  endif
+endfunc
+
+let g:gutentags_enabled = 1
+let g:gutentags_ctags_executable = '/usr/local/bin/ctags'
+" Flippin node_modules!
+let g:gutentags_ctags_exclude = ['node_modules/*', '*/node_modules/*']
+" }}}
+
+" CtrlP {{{
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_height = 20
+let g:ctrlp_working_path_mode = ''
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.?(node_modules|git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+" }}}
+
+" The Silver Searcher {{{
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 " }}}
 
 " FZF {{{
-let g:fzf_tags_command = 'ctags -R .'
-let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
+" let g:fzf_tags_command = 'ctags -R .'
+" let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
   " function! s:update_fzf_colors()
   "   let rules =
   "   \ { 'fg':      [['Normal',       'fg']],
@@ -107,15 +135,17 @@ let g:ale_linters = {
 \}
 " }}}
 
-" Syntastic {{{{{{
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_loc_list_height = 4
-" let g:syntastic_auto_loc_list = 0
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 1
-" let g:syntastic_javascript_checkers = ['eslint']
-" let g:tsuquyomi_disable_quickfix = 1
-" let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+" Syntastic {{{
+set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 "}}}
 
 " Neomake {{{
@@ -159,6 +189,12 @@ let g:yankring_replace_n_nkey = '<C-I>'
 " let g:indentLine_conceallevel = 2
 " }}}
 
+" Typescript stuff {{{
+" let g:tsuquyomi_use_local_typescript = 0
+let g:tsuquyomi_tsserver_path = '${HOME}/.config/yarn/global/node_modules/.bin/tsserver'
+let g:tsuquyomi_use_dev_node_module = 0
+" }}}
+
 " Vim-easy-motion
 " map <Leader> <Plug>(easymotion-prefix)
 
@@ -195,7 +231,7 @@ function! LightLineFilename()
 endfunction
 "}}}
 
-" Use Deoplete
+" Use Deoplete  {{{
 let g:deoplete#enable_at_startup = 1
 if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
@@ -205,14 +241,16 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:deoplete#disable_auto_complete = 1
 let g:deoplete#omni#sources={}
 let g:deoplete#omni#sources._=['buffer', 'file', 'ultisnips']
+" }}}
 
-let g:onedark_termcolors = 256
-let g:onedark_terminal_italics = 1
+
+" let g:onedark_termcolors = 256
+" let g:onedark_terminal_italics = 1
 
 " Golang Deoplete Settings {{{
-let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
-let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
-let g:deoplete#sources#go#use_cache = 1
+" let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+" let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+" let g:deoplete#sources#go#use_cache = 1
  "}}}
 
 " Golang {{{
@@ -270,14 +308,6 @@ augroup END
 nnoremap <F9> :TagbarToggle<CR>
 
 " Syntastic
-set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " Autosave
 " let g:auto_save = 1 " Enable autosave at startup

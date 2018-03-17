@@ -10,7 +10,7 @@ syntax enable
 set laststatus=2
 
 " Incremental command commands
-set inccommand=nosplit
+" set inccommand=nosplit
 
 set termguicolors
 set mouse=a
@@ -22,8 +22,11 @@ autocmd Filetype markdown setlocal tw=80
 
 " List chars
 " set listchars=tab:>~,nbsp:_,trail:•,eol:¬
-set listchars=tab:>~,nbsp:_,trail:•
-set list
+" set listchars=tab:>~,nbsp:_,trail:•
+" set list
+
+" GUI cursor
+" set guicursor=blinkon0
 
 " Line numbers
 set nu
@@ -39,18 +42,6 @@ set incsearch
 set ignorecase " should be done before smartcase for reliable behaviour
 set smartcase
 set showcmd
-
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
-endif
 
 " Show auto complete menu
 set wildmenu
@@ -82,6 +73,17 @@ set expandtab
 " js pangloss
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
+
+
+" {{{ --- Typescript space
+augroup my_ts_space_group
+    autocmd!
+    autocmd Filetype typescript set tabstop=2
+    autocmd Filetype typescript set softtabstop=0
+    autocmd Filetype typescript set expandtab
+    autocmd Filetype typescript set shiftwidth=2
+    autocmd Filetype typescript set smarttab
+" }}}
 
 
 " {{{ --- Java space
@@ -158,7 +160,8 @@ autocmd Filetype text setlocal spell
 autocmd Filetype markdown setlocal spell
 
 " Clipboard
-set clipboard^=unnamedplus
+" set clipboard^=unnamedplus
+set clipboard=unnamed " MacVim way...
 
 " Thin cursor in insert mode, yay!
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1

@@ -2,3 +2,5 @@ bundle
 autoload
 tags
 .netrwhist
+*.swp
+tags*

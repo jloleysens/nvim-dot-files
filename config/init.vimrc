@@ -15,7 +15,7 @@ Plug 'prettier/vim-prettier'
 " Plug 'vim-scripts/YankRing.vim'                               " Remember what I typed?
 " Plug 'Shougo/neosnippet.vim'
 " Plug 'Shougo/neosnippet-snippets'
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 " Plug 'tpope/vim-rails'                                      " Handy dandy rails project navigation and cmds
 " Plug 'vim-scripts/dbext.vim'                                " For connecting to a db via vim
 " Plug 'thinca/vim-ref'                                       " Elixir documentation lookup
@@ -26,9 +26,9 @@ Plug 'prettier/vim-prettier'
 " }}}
 
 " TypeScript{{{
-Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
-" Plug 'Quramy/tsuquyomi'                   " TypeScript highlighting and ts server integration for Vim
-" Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
+" Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
+Plug 'Quramy/tsuquyomi'                   " TypeScript highlighting and ts server integration for Vim
+Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
 " Plug 'HerringtonDarkholme/yats.vim'       " TypeScript syntax highlighting w/ DOM
 " }}}
 
@@ -71,38 +71,40 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by Typ
 " }}}
 
 " Utils (IDE-like stuff) {{{
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 " Plug 'gcmt/taboo.vim'                                  " Rename tabs
 Plug 'jiangmiao/auto-pairs'                            " Matching brackets and stuff on the fly
 Plug 'majutsushi/tagbar'                               " Tag explorer (mapped to <F8>)
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " File explorer (mapped to <F9>)
 Plug 'junegunn/vim-easy-align'                         " Aligning stuff - currently not really using this
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'editorconfig/editorconfig-vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'neomake/neomake'                                 " Async linting = life
 " Plug 'w0rp/ale'                                        " Async linting = life
 Plug 'airblade/vim-gitgutter'                          " Show changes according to git-diff
-" Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
+Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
 " Plug 'galooshi/vim-import-js'                          " Auto import-js (and/or require)
 " Plug 'KabbAmine/vCoolor.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdcommenter'
+Plug 'ludovicchabant/vim-gutentags'
 " Plug 'flowtype/vim-flow'
 " Plug 'neovim/node-host', { 'do': 'npm install' }
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
 " Plug 'Yggdroot/indentLine'                             " Code indentation
 " Plug 'vim-scripts/paredit.vim'        " Burpage and slurpage!
-" Plug 'scrooloose/syntastic'           " Basic sanity checking on code
+Plug 'scrooloose/syntastic'           " Basic sanity checking on code
 " Plug 'PeterRincker/vim-argumentative' " Arguments?
-" Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'vim-scripts/TailMinusF'         " For opening a buffer that will update as the file changes
 " Plug 'Lokaltog/vim-easymotion'        " Moving around files faster
 " }}}
 
 " Colorschemes {{{
-" Plug 'altercation/vim-colors-solarized'
-" Plug 'ajh17/Spacegray.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'ajh17/Spacegray.vim'
 Plug 'joshdick/onedark.vim'
 " Plug 'freeo/vim-kalisi'
 " Plug 'ashfinal/vim-colors-violet'

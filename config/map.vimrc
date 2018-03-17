@@ -28,6 +28,12 @@ nnoremap <leader>z :noh<CR>
 
 " cd Shortcuts
 nnoremap <leader>cdje :lcd ~/dev/journey-app-editor<CR>
+nnoremap <leader>cdja :lcd ~/dev/journey-accounts<CR>
+nnoremap <leader>cdjr :lcd ~/dev/journey-runtime<CR>
+nnoremap <leader>cdjj :lcd ~/dev/journey-js<CR>
+nnoremap <leader>cdr :lcd ~/dev/rocketlib<CR>
+nnoremap <leader>cdo :lcd ~/dev/opsql<CR>
+nnoremap <leader>cdi :lcd ~/.config/nvim<CR>
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
@@ -107,11 +113,11 @@ nnoremap <leader>js :%!python -m json.tool<CR>
 " }}}
 
 " FZF {{{
-nnoremap <C-p> :Files<CR>
+" nnoremap <C-p> :Files<CR>
 " }}}
 
 " Ctags {{{
-nnoremap <leader>t :!ctags -R .<cr>
+nnoremap <leader>t :!ctags .<cr>
 " nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <leader>. :Tags<cr>
 " }}}
@@ -152,8 +158,8 @@ nnoremap <leader><leader>y ggyG<c-o>
 nnoremap <leader><leader>p ggVGp
 
 " Swop colon and semicolon
-" nnoremap ; :
-" nnoremap : ;
+nnoremap ; :
+nnoremap : ;
 
 " Remove all trailing white space
 nnoremap <leader><leader>s :%s/\v\s+$//gi<CR>

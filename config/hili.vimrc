@@ -8,14 +8,16 @@ function! <SID>SynStack()
 endfunc
 
 set t_co=256
-colorscheme onedark
+" set background=dark
+" colorscheme base16-solarized-dark
+colorscheme spacegray
+" colorscheme solarized
 set fillchars+=vert:\|
 " highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool
 " highlight Normal guibg=none ctermbg=none
 
-set guifont=Fira\ Code:h13
-
+set guifont=Fira\ Code:h16
 
 " More GUI stuff
 " Hide all scrollbars
@@ -76,7 +78,7 @@ highlight LineNr ctermfg=241
 " highlight Visual cterm=none ctermfg=none ctermbg=236
 " highlight Search cterm=none ctermfg=0 ctermbg=9
 " highlight SignColumn ctermbg=234
-highlight CursorLine ctermbg=none guibg=none guifg=none
+" highlight CursorLine ctermbg=none guibg=none guifg=none
 " highlight CursorLineNr ctermbg=233
 " highlight LineNr ctermfg=239 ctermbg=234
 " highlight Folded ctermbg=235
