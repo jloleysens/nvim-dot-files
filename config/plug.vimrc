@@ -1,6 +1,6 @@
 " vim lightline
 let g:lightline ={
-            \'colorscheme': 'default',
+            \'colorscheme': 'Dracula',
             \'active': {
             \  'left': [ ['mode', 'paste'],
             \            ['fugitive','readonly','filename','modified'] ],
@@ -14,7 +14,7 @@ let g:lightline ={
             \   'filename': 'LightLineFilename',
             \ },
             \ 'component': {
-            \   'lineinfo': "%{GTagsRunningText()} %{printf('☰ %03d/%03d', line('.'),  line('$'))} %{LinePercent()}",
+            \   'lineinfo': "%{printf('☰ %03d/%03d', line('.'),  line('$'))} %{LinePercent()}",
             \   'column': 'C:%c',
             \},
             \ 'tabline': {
@@ -48,7 +48,7 @@ let g:NERDCompactSexyComs = 1
 function! GTagsRunningText()
   let l:text = gutentags#statusline()
   if (strlen(l:text))
-    return ' -= Generating tags =-'
+    return 'GT.'
   else
     return ''
   endif
@@ -85,8 +85,8 @@ endif
 " }}}
 
 " FZF {{{
-" let g:fzf_tags_command = 'ctags -R .'
-" let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
+let g:fzf_tags_command = 'ctags -R .'
+let $FZF_DEFAULT_COMMAND = 'ag -g "" --ignore node_modules'
   " function! s:update_fzf_colors()
   "   let rules =
   "   \ { 'fg':      [['Normal',       'fg']],
@@ -232,15 +232,15 @@ endfunction
 "}}}
 
 " Use Deoplete  {{{
-let g:deoplete#enable_at_startup = 1
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
+" let g:deoplete#enable_at_startup = 1
+" if !exists('g:deoplete#omni#input_patterns')
+  " let g:deoplete#omni#input_patterns = {}
+" endif
+" " let g:deoplete#disable_auto_complete = 1
+" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 " let g:deoplete#disable_auto_complete = 1
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-let g:deoplete#disable_auto_complete = 1
-let g:deoplete#omni#sources={}
-let g:deoplete#omni#sources._=['buffer', 'file', 'ultisnips']
+" let g:deoplete#omni#sources={}
+" let g:deoplete#omni#sources._=['buffer', 'file', 'ultisnips']
 " }}}
 
 
@@ -268,7 +268,7 @@ let g:go_fmt_command = "goimports"
 " autocmd BufWinEnter '__doc__' setlocal bufhidden=delete
 
 " UltiSnips {{{
-let g:UltiSnipsExpandTrigger='<C-Space>'
+let g:UltiSnipsExpandTrigger='<c-Space>'
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "my-snippets"]

@@ -39,7 +39,7 @@ nnoremap <leader>cdi :lcd ~/.config/nvim<CR>
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 " bind \ (backward slash) to grep shortcut
 command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-nnoremap \ :Ag<SPACE>
+nnoremap <leader>s :Ag<SPACE>
 
 " Edit my eslintrc file
 nnoremap <leader>jse :vs ~/.eslintrc.json
@@ -49,14 +49,14 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " Terminal keys
-" tnoremap <Esc> <C-\><C-n>
-" tnoremap <A-o> <C-\><C-n>gt
-" tnoremap <A-b> <C-\><C-n>gT
-" tnoremap <A-c> <C-\><C-n>:tabnew<CR>
-" tnoremap <A-h> <C-\><C-n><C-w>h
-" tnoremap <A-j> <C-\><C-n><C-w>j
-" tnoremap <A-k> <C-\><C-n><C-w>k
-" tnoremap <A-l> <C-\><C-n><C-w>l
+tnoremap <Esc> <C-\><C-n>
+tnoremap <A-o> <C-\><C-n>gt
+tnoremap <A-b> <C-\><C-n>gT
+tnoremap <A-c> <C-\><C-n>:tabnew<CR>
+tnoremap <A-h> <C-\><C-n><C-w>h
+tnoremap <A-j> <C-\><C-n><C-w>j
+tnoremap <A-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
 " Above commented out for Mvim
 tnoremap ø <C-\><C-n>gt
 tnoremap ∫ <C-\><C-n>gT
@@ -66,13 +66,13 @@ tnoremap ∆ <C-\><C-n><C-w>j
 tnoremap ˚ <C-\><C-n><C-w>k
 tnoremap ¬ <C-\><C-n><C-w>l
 
-" nnoremap <A-o> gt
-" nnoremap <A-b> gT
-" nnoremap <A-c> :tabnew<CR>
-" nnoremap <A-h> <C-w>h
-" nnoremap <A-j> <C-w>j
-" nnoremap <A-k> <C-w>k
-" nnoremap <A-l> <C-w>l
+nnoremap <A-o> gt
+nnoremap <A-b> gT
+nnoremap <A-c> :tabnew<CR>
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 nnoremap ø gt
 nnoremap ∫ gT
 nnoremap ç :tabnew<CR>
@@ -83,8 +83,10 @@ nnoremap ¬ <C-w>l
 " Gotta have o somewhere!
 nnoremap <Leader>o <C-o>
 
-nnoremap <leader><leader>n :vs ~/grive/notes.md<CR>
-nnoremap <leader><leader>N :e ~/grive/notes.md<CR>
+" nnoremap <leader><leader>n :vs ~/grive/notes.md<CR>
+nnoremap <leader><leader>n :vs ~/notes.md<CR>
+" nnoremap <leader><leader>N :e ~/grive/notes.md<CR>
+nnoremap <leader><leader>N :e ~/notes.md<CR>
 
 " Visual Mode
 vnoremap , <
@@ -113,13 +115,14 @@ nnoremap <leader>js :%!python -m json.tool<CR>
 " }}}
 
 " FZF {{{
-" nnoremap <C-p> :Files<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <leader>' :Tags<CR>
 " }}}
 
 " Ctags {{{
 nnoremap <leader>t :!ctags .<cr>
 " nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <leader>. :Tags<cr>
+" nnoremap <leader>. :Tags<cr>
 " }}}
 
 " General Abbreviation maps ------------------------------ {{{

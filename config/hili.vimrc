@@ -10,7 +10,11 @@ endfunc
 set t_co=256
 " set background=dark
 " colorscheme base16-solarized-dark
-colorscheme spacegray
+" colorscheme base16-google-light
+colorscheme base16-porple
+" colorscheme base16-default-light
+" colorscheme dracula
+" colorscheme onedark
 " colorscheme solarized
 set fillchars+=vert:\|
 " highlight VertSplit guibg=0
@@ -22,6 +26,7 @@ set guifont=Fira\ Code:h16
 " More GUI stuff
 " Hide all scrollbars
 set guioptions=
+" set guioptions+=e
 " Switch off the bell
 set noerrorbells
 set novisualbell
@@ -34,8 +39,6 @@ augroup _softwrap
  " highlight ColorColumn ctermbg=7 guibg=#d3d3d3
  " autocmd! BufWritePost * call matchadd('ColorColumn', '\%81v', 100)
 augroup END
-
-highlight LineNr ctermfg=241
 
 " Solarized List chars
 " highlight CursorLine ctermbg=none guibg=none guifg=none
@@ -191,8 +194,8 @@ let python_highlight_all=1
 " }}}
 
 " Comments
-highlight Comment cterm=italic gui=italic
-highlight htmlCommentPart cterm=italic gui=italic
+" highlight Comment cterm=italic gui=italic
+" highlight htmlCommentPart cterm=italic gui=italic
 
 " Pmenu
 " highlight Pmenu cterm=none
@@ -201,9 +204,9 @@ highlight htmlCommentPart cterm=italic gui=italic
 "
 " Set light theme settings for base16-github colorscheme
 function! SetLightThemeStuff()
-    highlight Comment cterm=italic gui=italic
-    highlight CursorLine ctermbg=none guibg=none guifg=none
-    highlight Pmenu guibg=#707880 gui=bold
+    " highlight Comment cterm=italic gui=italic
+    " highlight CursorLine ctermbg=none guibg=none guifg=none
+    " highlight Pmenu guibg=#707880 gui=bold
 endfunction
 
 " Highlighting for Python

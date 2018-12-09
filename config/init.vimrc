@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 
 " General {{{
-" Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
+Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
 Plug 'itchyny/lightline.vim'                     " Pretty bar at the bottom of the screen!
 Plug 'tpope/vim-fugitive'                        " Wrapper for Git and displaying current branch in lightline
 Plug 'ervandew/supertab'                         " Tab life!
@@ -26,17 +26,17 @@ Plug 'Valloric/YouCompleteMe'
 " }}}
 
 " TypeScript{{{
-" Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
+Plug 'Shougo/vimproc.vim', {'do': 'make'} " Async execution library (used by TypeScript)
 Plug 'Quramy/tsuquyomi'                   " TypeScript highlighting and ts server integration for Vim
 Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
 " Plug 'HerringtonDarkholme/yats.vim'       " TypeScript syntax highlighting w/ DOM
 " }}}
 
 " ECMAScript {{{
-" Plug 'pangloss/vim-javascript'  " Node syntax highlighting!
+Plug 'pangloss/vim-javascript'  " Node syntax highlighting!
 " Plug 'ternjs/tern_for_vim'      " Tern completion for JS
 " Plug 'carlitux/deoplete-ternjs' " Tern integration with deoplete
-" Plug 'maksimr/vim-jsbeautify'   " They see me indenting, they hatin'
+Plug 'maksimr/vim-jsbeautify'   " They see me indenting, they hatin'
 " Plug 'moll/vim-node'                                        " Same as vim-rails is but for nodejs
 " }}}
 
@@ -58,9 +58,13 @@ Plug 'leafgarland/typescript-vim'         " TypeScript syntax highlighting
 " Plug 'fatih/vim-go'
 " }}}
 
+" Ruby {{{
+Plug 'tpope/vim-rails'
+" }}}
+
 " Syntax Highlighting{{{
 " Plug 'digitaltoad/vim-pug'       " Pug (formerly Jade) syntax highlighting
-" Plug 'vim-ruby/vim-ruby'         " Ruby and eruby syntax highlighting
+Plug 'vim-ruby/vim-ruby'         " Ruby and eruby syntax highlighting
 " Plug 'hallison/vim-ruby-sinatra' " Sinatra syntax highlighting and snippets
 " Plug 'mxw/vim-jsx'               " Weclome react highligting
 " Plug 'elixir-lang/vim-elixir'    " Elixir-lang's endorsed vim plugin
@@ -79,9 +83,9 @@ Plug 'majutsushi/tagbar'                               " Tag explorer (mapped to
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' } " File explorer (mapped to <F9>)
 Plug 'junegunn/vim-easy-align'                         " Aligning stuff - currently not really using this
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-" Plug 'junegunn/fzf.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'neomake/neomake'                                 " Async linting = life
 " Plug 'w0rp/ale'                                        " Async linting = life
 Plug 'airblade/vim-gitgutter'                          " Show changes according to git-diff
@@ -90,7 +94,7 @@ Plug 'heavenshell/vim-jsdoc', { 'for': 'javascript' }  " Auto js doc
 " Plug 'KabbAmine/vCoolor.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdcommenter'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 " Plug 'flowtype/vim-flow'
 " Plug 'neovim/node-host', { 'do': 'npm install' }
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
@@ -112,7 +116,7 @@ Plug 'joshdick/onedark.vim'
 " Plug 'kudabux/vim-srcery-drk'
 Plug 'chriskempson/base16-vim'
 " Plug 'cocopon/lightline-hybrid.vim'
-" Plug 'dracula/vim'
+Plug 'dracula/vim'
 " Plug 'endel/vim-github-colorscheme'
 " Plug 'aliou/moriarty.vim'           " Nice colour scheme for Ruby and stuff
 " Plug 'NLKNguyen/papercolor-theme'   " Nice colour scheme for JS and stuff

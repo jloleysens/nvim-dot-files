@@ -1,7 +1,7 @@
 set shell=/bin/zsh
 
 " Set map leader
-let mapleader=","
+let mapleader="\\"
 
 " File type
 filetype plugin indent on
@@ -29,7 +29,6 @@ autocmd Filetype markdown setlocal tw=80
 " set guicursor=blinkon0
 
 " Line numbers
-set nu
 set relativenumber
 set scrolloff=5
 set cursorline
@@ -59,7 +58,7 @@ endfunc
 autocmd! BufWrite * call GetRidOfTrailingWhiteSpace()
 
 " Python {{{
-let g:python_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/local/bin/python3'
 let g:python_highlight_all=1
 " autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 " }}}
