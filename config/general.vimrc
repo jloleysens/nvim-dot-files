@@ -29,6 +29,7 @@ autocmd Filetype markdown setlocal tw=80
 " set guicursor=blinkon0
 
 " Line numbers
+set nu
 set relativenumber
 set scrolloff=5
 set cursorline
