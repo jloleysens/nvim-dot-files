@@ -2,13 +2,14 @@ call plug#begin('~/.config/nvim/bundle')
 
 " General {{{
 Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
-Plug 'itchyny/lightline.vim'                     " Pretty bar at the bottom of the screen!
+" Plug 'itchyny/lightline.vim'                     " Pretty bar at the bottom of the screen!
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'                        " Wrapper for Git and displaying current branch in lightline
 Plug 'ervandew/supertab'                         " Tab life!
 Plug 'tpope/vim-surround'                        " Quickly change surrounding stuff
 " Plug 'rhysd/vim-grammarous', {'for': 'markdown'} " Grammar checker - used primarily for MD files
 " Plug 'yegappan/mru'
-" Plug 'vim-scripts/marvim'                        " Store for handy macros
 Plug 'nathanaelkane/vim-indent-guides'
 " Plug 'janko-m/vim-test'
 Plug 'prettier/vim-prettier'
@@ -47,7 +48,7 @@ Plug 'maksimr/vim-jsbeautify'   " They see me indenting, they hatin'
 " Plug 'venantius/vim-eastwood' " Hello clj linting!
 " Plug 'guns/vim-clojure-static'
 " Plug 'guns/vim-clojure-highlight'
-" Plug 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 " Plug 'gberenfield/cljfold.vim'
 " Plug 'tpope/vim-salve'        " Requires vim firepleace << slows startup
 " Plug 'dgrnbrg/vim-redl'       " Clojure debugger
@@ -75,8 +76,8 @@ Plug 'vim-ruby/vim-ruby'         " Ruby and eruby syntax highlighting
 " }}}
 
 " Utils (IDE-like stuff) {{{
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 " Plug 'gcmt/taboo.vim'                                  " Rename tabs
 Plug 'jiangmiao/auto-pairs'                            " Matching brackets and stuff on the fly
 Plug 'majutsushi/tagbar'                               " Tag explorer (mapped to <F8>)
@@ -100,23 +101,24 @@ Plug 'scrooloose/nerdcommenter'
 " Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
 " Plug 'Yggdroot/indentLine'                             " Code indentation
 " Plug 'vim-scripts/paredit.vim'        " Burpage and slurpage!
-Plug 'scrooloose/syntastic'           " Basic sanity checking on code
+" Plug 'scrooloose/syntastic'           " Basic sanity checking on code
 " Plug 'PeterRincker/vim-argumentative' " Arguments?
 " Plug 'vim-scripts/TailMinusF'         " For opening a buffer that will update as the file changes
 " Plug 'Lokaltog/vim-easymotion'        " Moving around files faster
 " }}}
 
 " Colorschemes {{{
-Plug 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
 Plug 'ajh17/Spacegray.vim'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 " Plug 'freeo/vim-kalisi'
 " Plug 'ashfinal/vim-colors-violet'
 " Plug 'mhartington/oceanic-next'
 " Plug 'kudabux/vim-srcery-drk'
 Plug 'chriskempson/base16-vim'
 " Plug 'cocopon/lightline-hybrid.vim'
-Plug 'dracula/vim'
+" Plug 'dracula/vim'
 " Plug 'endel/vim-github-colorscheme'
 " Plug 'aliou/moriarty.vim'           " Nice colour scheme for Ruby and stuff
 " Plug 'NLKNguyen/papercolor-theme'   " Nice colour scheme for JS and stuff
@@ -134,5 +136,16 @@ Plug 'dracula/vim'
 " Plug 'shaond/vim-guru'
 " Plug 'wikitopian/hardmode' " Why????
 " }}}
+"
+
+Plug 'vim-scripts/CSApprox' " Color stuff
+
+Plug 'sheerun/vim-polyglot'
+
+"" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+
 
 call plug#end()

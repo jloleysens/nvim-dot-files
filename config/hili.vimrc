@@ -7,21 +7,65 @@ function! <SID>SynStack()
     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-set t_co=256
-" set background=dark
-" colorscheme base16-solarized-dark
-" colorscheme base16-google-light
-colorscheme base16-porple
-" colorscheme base16-default-light
-" colorscheme dracula
-" colorscheme onedark
-" colorscheme solarized
-set fillchars+=vert:\|
+" set t_co=256
+" silent! colorscheme base16-porple
+silent! colorscheme molokai
+" set fillchars+=vert:\|
 " highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool
 " highlight Normal guibg=none ctermbg=none
 
-set guifont=Fira\ Code:h16
+
+set mousemodel=popup
+set t_Co=256
+set guioptions=egmrti
+set gfn=Monospace\ 10
+
+if has("gui_running")
+  if has("gui_mac") || has("gui_macvim")
+    set guifont=Menlo:h12
+    set transparency=7
+  endif
+else
+  let g:CSApprox_loaded = 1
+
+  " IndentLine
+  let g:indentLine_enabled = 1
+  let g:indentLine_concealcursor = 0
+  let g:indentLine_char = '┆'
+  let g:indentLine_faster = 1
+
+
+endif
+
+
+
+"" Disable the blinking cursor.
+set gcr=a:blinkon0
+set scrolloff=3
+
+"" Status bar
+set laststatus=2
+
+"" Use modeline overrides
+set modeline
+set modelines=10
+
+set title
+set titleold="Terminal"
+set titlestring=%F
+
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+if exists("*fugitive#statusline")
+  set statusline+=%{fugitive#statusline()}
+endif
+
 
 " More GUI stuff
 " Hide all scrollbars
@@ -30,8 +74,8 @@ set guioptions=
 " Switch off the bell
 set noerrorbells
 set novisualbell
-set t_vb=
-autocmd! GUIEnter * set vb t_vb=
+" set t_vb=
+" autocmd! GUIEnter * set vb t_vb=
 
 augroup _softwrap
   " My Custom Highligting -----------

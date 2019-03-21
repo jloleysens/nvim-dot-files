@@ -1,4 +1,3 @@
-" Pathogen plugin manager
 set nocompatible
 filetype off
 source $HOME/.config/nvim/config/init.vimrc
