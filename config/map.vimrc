@@ -161,8 +161,8 @@ nnoremap <leader><leader>y ggyG<c-o>
 nnoremap <leader><leader>p ggVGp
 
 " Swop colon and semicolon
-nnoremap ; :
-nnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
 
 " Remove all trailing white space
 nnoremap <leader><leader>s :%s/\v\s+$//gi<CR>

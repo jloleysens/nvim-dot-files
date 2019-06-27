@@ -8,8 +8,8 @@ function! <SID>SynStack()
 endfunc
 
 " set t_co=256
-" silent! colorscheme base16-porple
-silent! colorscheme molokai
+silent! colorscheme base16-porple
+" silent! colorscheme molokai
 " set fillchars+=vert:\|
 " highlight VertSplit guibg=0
 " colorscheme base16-atelier-sulphurpool

@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 
 " General {{{
+Plug 'qpkorr/vim-bufkill'
 Plug 'Shougo/deoplete.nvim'                      " Async autocompletion
 " Plug 'itchyny/lightline.vim'                     " Pretty bar at the bottom of the screen!
 Plug 'vim-airline/vim-airline'
@@ -141,6 +142,8 @@ Plug 'chriskempson/base16-vim'
 Plug 'vim-scripts/CSApprox' " Color stuff
 
 Plug 'sheerun/vim-polyglot'
+
+Plug 'vim-airline/vim-airline-themes'
 
 "" Snippets
 Plug 'SirVer/ultisnips'
